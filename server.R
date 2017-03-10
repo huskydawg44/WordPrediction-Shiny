@@ -5,7 +5,7 @@ require(dplyr)
 
 # Load in prediction data frames
 con<-gzfile("CompressedPreds6.Rdf")
-load(con)
+load(con, envir = .GlobalEnv)
 close(con)
 
 source("Text_Cleaner.R")
